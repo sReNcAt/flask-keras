@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+        
+    <body>
+        {{text}}
+        {% if uploadfiled == False %}
+        {% else %}
+        <form method="POST" action="/upload" enctype=multipart/form-data>
+            <input type="file" name="file">
+            <input type="submit">
+        </form>
+        {% endif %}
+    </body>
+</html>
